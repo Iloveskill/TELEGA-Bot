@@ -29,3 +29,4 @@ class CryptoConverter:
         total_base = json.loads(r.content)[keys[base]]
 
         return total_base
+

@@ -25,7 +25,7 @@ def convert(message: telebot.types.Message):
     try:
         values = message.text.split(' ')
 
-        if len(values) != 3:
+        if len(values) > 3:
             raise  ConvertionExceprion('Слишком много параметров')
 
         quote, base, amount = values
